@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-s {
+    background-image: url(https://github.com/Danoonka/proj_html_css/blob/main/img/bg/main_bg.jpg?raw=true);
+    min-height: 700px;
+    margin-top: auto;
+    padding-top: 50px;
+    padding-left: 200px;
+    padding-right: 200px; 
+    text-align: center;
+    display: block;
+}
+
+.main-s > * {
+    margin-top: 50px;
+}
+
+.header-p {
+    font-size:35px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #e9a719;
+}
+
+.text-p {
+    font-size:20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.list-p {
+    font-size:20px;
+    text-align: left;
+    color: #ffffff;
+}
+
+
+.main-i {
+    background-image: url(https://github.com/Danoonka/proj_html_css/blob/main/img/bg/main_bg.jpg?raw=true);
+    min-height: 700px;
+    margin-top: auto;
+    padding-top: 50px;
+
+}
+
+.header-i {
+    font-size:35px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fffffe;
+}
+
+table {
+    table-layout: fixed;
+    width: 80%;
+    border-collapse: collapse;
+    border: 3px solid #e7a145;
+    margin: auto;
+  }
+  
+  thead th:nth-child(1) {
+    width: 30%;
+  }
+  
+  thead th:nth-child(2) {
+    width: 30%;
+  }
+  
+  thead th:nth-child(3) {
+    width: 30%;
+  }
+  
+  
+  th, td {
+    padding: 15px;
+  }
+
+.header-table {
+    font-size:18px;
+    text-align: center;
+    color: #e9a719; 
+
+  }
+
+.header-text {
+    font-size:18px;
+    text-align: center;
+    color: rgb(231, 201, 162); 
+
+  }
+
+.text-link{
+    font-size:25px;
+    text-align: center;
+    color: #ffffff; 
+ 
+}
+
+.text-link1{
+    font-size:25px;
+    text-align: center;
+    color: #e9a719; 
+}
+
+.fit-picture{
+
+    width: 125px;
+    height: 100px;
+}
+
+.find-more-block {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    bottom: 0px;
+    margin-top: 75px;
+}
+
+.table-s {
+    margin-top: 75px;
+}
+    
