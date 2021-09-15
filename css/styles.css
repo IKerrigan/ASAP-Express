@@ -1,10 +1,12 @@
 body {
+    width: 100%;
     margin: 0;
     padding: 0;
+    background-color: black;
 }
 
 .main-s {
-    background-image: url(https://github.com/Danoonka/proj_html_css/blob/main/img/bg/main_bg.jpg?raw=true);
+    background-image:url('../img/Unknown.jpg');
     min-height: 700px;
     margin-top: auto;
     padding-top: 50px;
@@ -12,6 +14,8 @@ body {
     padding-right: 200px; 
     text-align: center;
     display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .main-s > * {
@@ -39,10 +43,12 @@ body {
 
 
 .main-i {
-    background-image: url(https://github.com/Danoonka/proj_html_css/blob/main/img/bg/main_bg.jpg?raw=true);
+    background-image:url('../img/Unknown.jpg');
     min-height: 700px;
     margin-top: auto;
     padding-top: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 
@@ -122,4 +128,92 @@ table {
 .table-s {
     margin-top: 75px;
 }
+
+.formContact {
+    position: relative;
+    bottom: 15px;
+    height: 650px;
+    width: 100%;
+    background-size: contain,cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('https://deltaexpressinc.com/wp-content/uploads/2020/09/contact-us-min.jpg');
+}
     
+.input-row input, .input-row textarea {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 300;
+    color: #e9a719;
+    text-align: left;
+    background-color: transparent;
+    border-bottom: 1px solid #e9a719;
+    padding: 0 0 0;
+    position: relative;
+    z-index: 1;
+}
+button, input, select, textarea {
+    border-radius: 0;
+    outline: none;
+    border: none;
+}
+.input-row {
+    margin: 0 0 40px;
+    padding: 0 15px;
+    position: relative;
+}
+.input-row .label {
+    font-size: 16px;
+    font-weight: 300;
+    color: #e9a719;
+    transform: translate(15px,-3px);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+input-row .line {
+    display: block;
+    width: 0;
+    /* height: 1px; */
+    background-color:#CE4718;
+    position: absolute;
+    left: 15px;
+    bottom: 0;
+    z-index: 1;
+}
+.x-row-inline>* {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 40px;
+}
+#message{
+    width: 80%;
+}
+input[type=submit].sendData:hover {
+    background-color: #CE4718;
+    color: white;
+    
+}
+input[type=submit].sendData {
+    display: inline-block;
+    max-width: 260px;
+    min-width: 180px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #CE4718;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 1px solid #CE4718;
+    border-radius: 2px;
+    padding: 10px 20px;
+    position: relative;
+    overflow: hidden;
+}
+.formText{
+    color: white;
+    font-size: 25px;
+    line-height: 25px;
+}
