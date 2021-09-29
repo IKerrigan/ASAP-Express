@@ -5,6 +5,39 @@ body {
     background-color: black;
 }
 
+#services {
+    position: relative;
+    height: 700px;
+    width: 100%;
+    padding-top: 25px;
+    margin-bottom: auto;
+}
+
+#services::after{
+    background: url("https://static.posters.cz/image/1300/%D0%A4%D0%BE%D1%82%D0%BE%D1%88%D0%BF%D0%B0%D0%BB%D0%B5%D1%80%D0%B8/yellow-road-i54303.jpg");
+    opacity: 40%;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-size: 100%;
+    position: absolute;
+    z-index: -1; 
+}
+
+.header-l{
+    font-size:35px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #e9a719;
+}    
+
+.text-link{
+    font-size: 14px;
+    text-align: center;
+    color: #e9a719; 
+}
 .main-s {
     background-image:url('../img/Unknown.jpg');
     min-height: 700px;
@@ -43,13 +76,24 @@ body {
 
 
 .main-i {
-    background-image:url('../img/Unknown.jpg');
-    min-height: 700px;
-    margin-top: auto;
-    padding-top: 50px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    position: relative;
+    height: 650px;
+    width: 100%;
+    padding-top: 25px;
+    margin-bottom: auto;
+}
 
+.main-i::after{
+    background-image:url('https://highwaysengland.co.uk/media/4eubhsti/network-image2.jpg?anchor=center&mode=crop&width=800&height=450&rnd=132495822044500000');
+    opacity: 40%;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-size: 100%;
+    position: absolute;
+    z-index: -1; 
 }
 
 .header-i {
@@ -98,14 +142,14 @@ table {
 
   }
 
-.text-link{
+.text-link1{
     font-size:25px;
     text-align: center;
     color: #ffffff; 
  
 }
 
-.text-link1{
+.text-link2{
     font-size:25px;
     text-align: center;
     color: #e9a719; 
@@ -181,7 +225,7 @@ input-row .line {
     bottom: 0;
     z-index: 1;
 }
-.x-row-inline>* {
+.x-row-inline >*  {
     width: 40%;
     margin-left: auto;
     margin-right: auto;
@@ -217,3 +261,4 @@ input[type=submit].sendData {
     font-size: 25px;
     line-height: 25px;
 }
+
