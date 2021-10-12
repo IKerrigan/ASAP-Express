@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="ua">
+    <head>
+        <meta charset="UTTF-8">
+        <title>Звіті з лобораторніз робіт</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <div id="head"><h2 align="center">ЗВІТИ  З ЛАБОРАТОРНИХ РОБІТ<br> З ДИСЦИПЛІНИ «ОСНОВИ FRONT-END ТА BACKEND РОЗРОБОК»</h2></div>
+    
+    </head>
+    <body>
+        <div class="groupInformation" id="content">
+            <div id="aboutGroup">
+                <div class="info">БРИГАДА №2</div>
+                <div class="info">Студенти групи  ІB-93</div>
+                <div class="info">Слюсарь Регіни та Стефановіч Іріни</div>
+                <div class="info"><img src="Regina.jpg" alt="photo" height="100" ></div>
+                <div class="info"><img src="Irina.jpg" alt="photo" height="100"></div>
+            </div>
+            <div id="laboratoryWorks">
+                <a class="labNum" id="lab1" href="#work1" onclick="showLab1();return false;">Лабораторна робота №1</a>
+                <a class="labNum" href="#" onclick="showLab2();return false;">Лабораторна робота №2</a>
+                <a class="labNum" href="#">Лабораторна робота №3</a>
+                <a class="labNum" href="#">Лабораторна робота №4</a>
+                <a class="labNum" href="#">Лабораторна робота №5</a>
+                <a class="labNum" href="#">Лабораторна робота №6</a>
+                <a class="labNum" href="#">Лабораторна робота №7</a>
+                <a class="labNum" href="#">Лабораторна робота №8</a>
+            </div>
+        </div>
+        <div id="ourWork">
+            <div class="work" id="work1">
+                <a class="lab" href="#descriptionLab">Опис предметного середовища</a>
+                <a class="lab" href="#goal">Тема Мета Розташування лаби</a>
+                <a class="lab" href="#structure">Структура Документа</a>
+                <a class="lab" id="tableCode" href="#tableCodeFind">HTML-код таблиць</a>
+                <a class="lab" id="formCode" href="#formCodeFind">HTML-код форми</a>
+                <a class="lab" id="imgCode" href="#imgCodeFind">HTML-код зображення</a>
+                <a class="lab" id="listCode" href="#listCodeFind">HTML-код списків</a>
+                <a class="lab" href="#end">Висновки</a>
+            </div>
+            <div class="output">
+                <div class="outputLab">
+                    <div id="descriptionLab">
+                        <h2>Опис предметного середовіща</h2>
+                        <p>Розроблене програмне забезпечення призначене для користувачів, що 
+                        пов’язані зі сферою логістики, а саме є представниками транспортних 
+                        компаній, водіями, і т.д.. </p><p>Завдяки розробленому програмному забезпеченню 
+                            користувачі матимуть змогу переглядати типи послуг, отримувати основну
+                             інформацію про компанію та наявні типи машин, що використовуються для 
+                             транспортування вантажів, створювати обліковий запис, а також надсилати
+                              запити компанії, що надає послуги.</p>
+                    </div>
+                    <div id="goal">
+                        <h2>Тема</h2>
+                        <p>Веб додаток для користувачів зі сфери логістики і вантажоперевезень.</p>
+                        <h2>Мета</h2>
+                        <p>За допомогою цього веб-додатку партнери матимуть змогу надсилати запити на траспортування вантажів по Америці, а також Мексиці і Канаді. 
+                            Вони матимуть можливість переглянути інформацію стосовно своїх замовлень, оновлювати статус виконання перевезення, робити запити на оновлення локації і т.д.. </p>
+                            <p>Також, користувачі матимуть змогу переглядати інформацію стосовно компанії та відправляти форму для майбутньої співпраці з нею.</p>
+                        <h2>Розташування лаби</h2>
+                        <p>Посілання на GitHub <a href="https://github.com/IKerrigan/ASAP-Express">https://github.com/IKerrigan/ASAP-Express</a>.</p>
+                    </div>
+                    <div id="structure">
+                        <h2>Структура Документа</h2>
+                            <h3>HTML-код таблиць</h3>
+                            <xmp>
+                            <table class="table-s">
+                                <tbody>
+                                  <tr>
+                                    <th class="header-table">SERVICES & REPORTING</th>
+                                    <th class="header-table">CROSS-DOCKING</th>
+                                    <th class="header-table">WAREHOUSING</th>
+                                  </tr>
+                                  <tr>
+                                    <td class="header-text">We assist in customized </br> projects and 
+                                        provide robust </br>custom reporting to ensure <br> complete
+                                         transparency.
+                                    </td>
+                                    <td class="header-text">Optimize the flexibility </br> of 
+                                        unloading incoming and </br>reloading outbound 
+                                        freight </br>with little to no storage time.
+                                    </td>
+                                    <td class="header-text">Access a state-of-the-art </br> facility
+                                         with 24-hour </br> surveillance 
+                                         including </br> inventory management.
+                                        </td>
+                                  </tr>
+                                  <tr>
+                                    <th class="header-table">BORDER CROSSING</th>
+                                    <th class="header-table">REAL-TIME TRACKING</th>
+                                    <th class="header-table">WHITE GLOVE SERVICE</th>
+                                  </tr>
+                                  <tr>
+                                    <td class="header-text">Transport between US, </br>Canada and Mexico 
+                                        relying on </br> our certifications, processes </br>and electronic filing.
+                                    </td>
+                                    <td class="header-text">Updates provided every two-</br>hours with
+                                         GPS real-time </br>tracking devices to ensure</br> full-time visibility.
+                                        </td>
+                                    <td class="header-text">Electric pallet jacks and </br>vehicles with lift 
+                                        gates means </br>we can deliver the freight</br> exactly where you need it.
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </xmp>
+
+                        <h3>Код зображення</h3>
+                        <xmp>
+                            CSS:
+                            url(https://github.com/Danoonka/proj_html_css/blob/main/img/bg/main_bg.jpg?raw=true);;
+
+                            html:
+                            <img src="form.png" alt="photo" height="400" >
+
+
+                        </xmp>
+                        <h3>HTML-кодсписків</h3>
+                        <xmp>
+                            <ul class="list-p">
+                                <li>Наявність системи авторизації та реєстрації;</li>
+                                <li>Розділення прав доступу до функціоналу сервісу;</li>
+                                <li>Можливість змінювати профіль користувача;</li>
+                                <li>Можливість заповнювати певні поля з перевіркою на валідність та подальшим збереженням цих даних з прив’язкою до користувача;</li>
+                                <li>Перегляд основної інформації про транспортну компанію;</li>
+                                <li>Перегляд наявних типів машин, що використовуються для транспортування вантажів;</li>
+                                <li>Перегляд різних типів послуг, що надає компанія;</li>
+                                <li>Можливість створення запиту, через заповнення та підтвердження форми, для початку співпраці з компанією (окремо для брокерів <br/>та водіїв) та замовлення перевезення вантажу.</li>
+                            </ul>
+                        </xmp>
+                        <h3>HTML-код посилань</h3>
+                        <xmp>
+                            <a class="text-link1" href="domain.html">Click here</a>
+                        </xmp>
+                        
+                    </div>
+                    <div id="tableCodeFind">
+                        <h2>HTML-код таблиць</h2>
+                        <xmp>
+                            <table class="table-s">
+                                <tbody>
+                                  <tr>
+                                    <th class="header-table">SERVICES & REPORTING</th>
+                                    <th class="header-table">CROSS-DOCKING</th>
+                                    <th class="header-table">WAREHOUSING</th>
+                                  </tr>
+                                  <tr>
+                                    <td class="header-text">We assist in customized </br> projects and 
+                                        provide robust </br>custom reporting to ensure <br> complete
+                                         transparency.
+                                    </td>
+                                    <td class="header-text">Optimize the flexibility </br> of 
+                                        unloading incoming and </br>reloading outbound 
+                                        freight </br>with little to no storage time.
+                                    </td>
+                                    <td class="header-text">Access a state-of-the-art </br> facility
+                                         with 24-hour </br> surveillance 
+                                         including </br> inventory management.
+                                        </td>
+                                  </tr>
+                                  <tr>
+                                    <th class="header-table">BORDER CROSSING</th>
+                                    <th class="header-table">REAL-TIME TRACKING</th>
+                                    <th class="header-table">WHITE GLOVE SERVICE</th>
+                                  </tr>
+                                  <tr>
+                                    <td class="header-text">Transport between US, </br>Canada and Mexico 
+                                        relying on </br> our certifications, processes </br>and electronic filing.
+                                    </td>
+                                    <td class="header-text">Updates provided every two-</br>hours with
+                                         GPS real-time </br>tracking devices to ensure</br> full-time visibility.
+                                        </td>
+                                    <td class="header-text">Electric pallet jacks and </br>vehicles with lift 
+                                        gates means </br>we can deliver the freight</br> exactly where you need it.
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </xmp>
+                        <img src="table.png" alt="photo" height="250" >
+                        <p><b>Тег <code>&lt;table&gt;</code></b> є контейнером для елементів, що <b>>визначають вміст таблиці.</b> Будь-яка таблиця складається з рядків і осередків, які задаються за допомогою тегів <code>&lt;tr&gt;</code> і <code>&lt;td&gt;</code>. Усередині <code>&lt;table&gt;</code> допустимо використовувати наступні елементи:<code>&lt;caption&gt;, &lt;col&gt;,&lt;caption&gt;, &lt;colgroup&gt;, &lt;tbody&gt;, &lt;td&gt;, &lt;tfoot&gt;, &lt;th&gt;, &lt;thead&gt;, &lt;tr&gt;</code>.</p>
+                        <p><b>Тег <code>&lt;tbody&gt;</code> </b>призначений <b>для зберігання одного чи кількох рядків таблиці.</b> Це дозволяє створювати структурні блоки, до яких можна застосовувати єдине оформлення через стилі, а також керувати їх видом через скрипти.</p>
+                        <p><b>Тег <code>&lt;tr&gt;</code> </b> служить контейнером для створення рядків таблиці.</p>
+                        <p><b>Тег <code>&lt;td&gt;</code> </b> Призначений для створення однієї комірки таблиці. Тег <code>&lt;td&gt;</code> повинен розміщуватися всередині контейнера <code>&lt;tr&gt;</code>, який в свою чергу розташовується всередині тега <code>&lt;table&gt;</code>.</p>
+                        <p><b>Тег <code>&lt;br&gt;</code> </b> встановлює новий рядок в тому місці, де цей тег знаходиться.</p>
+                    </div>    
+                    <div id="formCodeFind">
+                        <h2>HTML-код форми</h2>
+                        <xmp>
+                            <form class="x-row-inline contactUs" novalidate="novalidate">
+                                <div class="formText"><h2>LET'S GET STARTED</h2></div>
+                                <div class="input-row">
+                                    <span class="data">
+                                        <input type="text" name="firstname" value="" size="40"  />
+                                    </span>
+                                    <label for="firstname" class="label">First Name</label>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="input-row">
+                                    <span class="data">
+                                        <input type="text" name="lastname" value="" size="40" />
+                                    </span>
+                                    <label for="lastname" class="label">Last Name</label>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="input-row">
+                                    <span class="data">
+                                        <input type="email" name="email" value="" size="40"  />
+                                    </span>
+                                    <label for="email" class="label">E-mail</label>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="input-row">
+                                    <span class="data">
+                                        <input type="tel" name="phone" value="" size="40"  />
+                                    </span>
+                                    <label for="phone" class="label">Phone</label>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="input-row">
+                                    <span class="data">
+                                        <textarea name="message" cols="40" rows="10" id="message" >
+                                        </textarea>
+                                    </span>
+                                    <label for="message" class="label">Message</label>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="input-row">
+                                    <div class="input-row x-row-inline">
+                                        <input type="submit" value="Send Request" class="sendData" />
+                                    </div>
+                                </div>
+                            </form>
+                        </xmp>
+                        <img src="form.png" alt="photo" height="400" >
+                        <p><b>Тег <code>&lt;form&gt;</code> </b> встановлює форму на веб-сторінці. Форма 
+                            призначена для обміну даними між користувачем і сервером. Область 
+                            застосування форм не обмежена відправкою даних на сервер, за допомогою 
+                            клієнтських скриптів можна отримати доступ до будь-якого елементу форми, 
+                            змінювати його і застосовувати на власний розсуд.</p>
+                        <p><b>Тег  <code>&lt;span&gt;</code> </b>призначений для визначення малих елементів документа.</p>
+                        <p><b>Тег  <code>&lt;input&gt;</code> </b>призначений для створення текстових полів, різних кнопок, перемикачів і прапорців.</p>
+                        <p><b>Тег <code>&lt;label&gt;</code> </b>встановлює зв'язок між певною міткою, в якості якої зазвичай виступає текст, і елементом форми.
+                            Такая зв'язок необхідна, щоб змінювати значення елементів форми при натисканні курсором миші на текст.</p>
+                        <p><b></b>Поле  <code>&lt;textarea&gt;</code> </b>є елементом форми для створення області, в яку можна вводити кілька рядків тексту. У текстовому полі допустимо робити переноси рядків, вони зберігаються при відправці даних на сервер.</p>
+                    </div>  
+                    <div id="imgCodeFind">
+                        <h2>HTML-код зображення</h2>
+                        <xmp>
+                            CSS:url(https://github.com/Danoonka/proj_html_css/blob/main/img/bg/main_bg.jpg?raw=true);;
+
+                            html:
+                            <img src="form.png" alt="photo" height="400" >
+                        </xmp>
+                        <img src="form.png" alt="photo" height="200" >
+                        <img src="contact-us-min.jpg" alt="photo" height="200" >
+                        <p><b>Тег  <code>&lt;img&gt;</code> </b> предназначен для отображения на веб-странице изображений в графическом формате GIF, JPEG или PNG. </p>
+                    </div>  
+                    <div id="listCodeFind">
+                        <h2>HTML-код списків</h2>
+                        <xmp>
+                            <ul class="list-p">
+                                <li>Наявність системи авторизації та реєстрації;</li>
+                                <li>Розділення прав доступу до функціоналу сервісу;</li>
+                                <li>Можливість змінювати профіль користувача;</li>
+                                <li>Можливість заповнювати певні поля з перевіркою на валідність та подальшим збереженням цих даних з прив’язкою до користувача;</li>
+                                <li>Перегляд основної інформації про транспортну компанію;</li>
+                                <li>Перегляд наявних типів машин, що використовуються для транспортування вантажів;</li>
+                                <li>Перегляд різних типів послуг, що надає компанія;</li>
+                                <li>Можливість створення запиту, через заповнення та підтвердження форми, для початку співпраці з компанією (окремо для брокерів <br/>та водіїв) та замовлення перевезення вантажу.</li>
+                            </ul>
+                        </xmp>
+                        <img src="list.png" alt="photo" height="200" >
+                        <p><b>Тег <code>&lt;ul&gt;</code></b> устанавливает <b>маркированный список.</b> Каждый элемент списка должен начинаться с тега <code>&lt;li&gt;</code>.</p>
+                        <p><b>Тег <code>&lt;li&gt;</code></b>определяет отдельный элемент списка.</p>
+                    </div>
+                    <div id="end">
+                        <h2>Висновки</h2>
+                        <p>У цій лабораторній роботі ми визначилися з темою нашого веб веб-додатку. Вивчили теги для таблиці, картинок і списків , та форм . Була створена головна веб сторінка, на якій розташована головна інформація о проекті та форма зв'язку. Та переход на іншу стрінку, де знаходиться функціонал та бізнес модель.</p>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+        <div id="ourWork2">
+            <div class="work" id="work2">
+                <a class="lab" href="#goalLab2">Тема, Мета, Місце розташування Звіту, Сайту</a>
+                <a class="lab" href="#listLab2">Списки</a>
+                <a class="lab" href="#indificatorsLab2">Індефікатори</a>
+                <a class="lab" href="#ibdentLab2">Відступи</a>
+                <a class="lab" href="#floatingLab2">Плаваючі елементи</a>
+                <a class="lab" href="#selectorAllLab2">Селектори</a>
+                <a class="lab" id="selectorsTC" href="#selectorsTCLab2">Селектори тегу і классу</a>
+                <a class="lab" id="selectors" href="#selectorsLab2">Інші селектори</a>
+                <a class="lab" id="selectorGroup" href="#selectorsLab2">Групування селекторів</a>
+                <a class="lab" href="#outLab2">Вісновки</a>
+            </div>
+            <div class="output">
+                <div class="outputLab2">
+                    <div id="goalLab2">
+                        <h2>Тема</h2>
+                        <h4>КАСКАДНІ ТАБЛИЦІ СТИЛІВ. СЕЛЕКТОРИ .ІДЕНТИФІКАТОРИ. 
+                        СТИЛЬОВЕ ОФОРМЛЕННЯ ТЕКСТОВИХ ЕЛЕМЕНТІВ В HTML-ДОКУМЕНТАХ.</h4>
+                         <h2>Мета</h2>
+                         Придбати практичні навички роботи  з селекторами,ідентифікаторами, списками,
+                           різноманітними властивостями кольору і фону,  зовнішними та внутрішними
+                             відступами,  плаваючими елементами, оформленням текстових елементів
+                         <h2>Розташування лаби</h2>
+                             <p>Посілання на GitHub <a href="https://github.com/IKerrigan/ASAP-Express">https://github.com/IKerrigan/ASAP-Express</a>.</p>
+                     </div>
+                     <div id="listLab2">
+                         <h2>Списки</h2>
+                         <xmp>
+                            <ul>
+                                <li>All ground expedite between US, Canada and Mexico</li>
+                                <li>Fast approved CSA, CTPAT and TSA approved drivers</li>
+                                <li>Reliable dispatchers 24/7 throughout the calendar year</li>
+                              </ul>
+                              <ul>
+                                <li>Local and Long Haul</li>
+                                <li>Flexible capacity to meet all schedules</li>
+                                 <li>No stops, no shared freight</li>
+                               </ul>
+                               <ul>
+                                <li>One price per day per truck</li>
+                                <li>White glove handling</li>
+                                <li>Electric pallet jacks available</li>
+                              </ul>
+                              <ul>
+                                <li>Reefer</li>
+                                <li>Flatbed</li>
+                                <li>Lift Gates</li>
+                              </ul>
+                              <ul>
+                                <li>Airport to Airport</li>
+                                <li>Hand courier service</li>
+                                <li>Door-to-door attention</li>
+                              </ul>
+                              <ul>
+                                <li>Same day delivery available</li>
+                                <li>Same day delivery available</li>
+                                <li>24/7 service</li>
+                              </ul>
+                         </xmp>
+                         <img src="list1.png" alt="photo" height="400" >
+                        <p><b>Тег <code>&lt;ul&gt;</code></b> устанавливает маркированный список.
+                        <p><b>Тег <code>&lt;ol&gt;</code> </b> устанавливает нумерованный список.
+                        <p><b>Тег <code>&lt;li&gt;</code> </b> используется для создания элементов списка.
+                     </div>
+                     <div id="indificatorsLab2">
+                        <h2>Індефікатори</h2>
+                        <xmp>
+                            <section id="services"></section>
+
+
+                            <textarea name="message" cols="40" rows="10" id="message" >
+                            </textarea>   
+
+
+                            <a class="lab" id="tableCode" href="#tableCodeFind">HTML-код таблиць</a>
+                            <a class="lab" id="formCode" href="#formCodeFind">HTML-код форми</a>
+                            <a class="lab" id="imgCode" href="#imgCodeFind">HTML-код зображення</a>
+                            <a class="lab" id="listCode" href="#listCodeFind">HTML-код списків</a>
+
+                        </xmp>
+                        <p>Идентификатор (называемый также «ID селектор») определяет уникальное имя 
+                             элемента,которое используется для изменения его стиля и обращения к 
+                             нему через скрипты.</p>
+                        <p>При описании идентификатора вначале указывается символ решётки (#), затем 
+                             идет имя идентификатора.<br> Оно должно начинаться с латинского символа и может 
+                             содержать в себе символ дефиса (-) и подчеркивания (_).</p>
+                        <p>Использованиерусских букв в именах идентификатора недопустимо. </p>
+                        <p>В отличие от классовидентификаторы должны быть уникальны, иными словами, встречаться в коде 
+                             документа только один раз.</p>
+                     </div>
+                     <div id="ibdentLab2">
+                         <h2>Відступи</h2>
+                         <xmp>
+                            th, td {
+                                padding: 15px;
+                            }
+                            #services {
+                                position: relative;
+                                height: 700px;
+                                width: 100%;
+                                padding-top: 25px;
+                                margin-bottom: auto;
+                            }
+                            .main-s {
+                                background-image:url('../img/Unknown.jpg');
+                                min-height: 800px;
+                                margin-top: auto;
+                                padding-top: 50px;
+                                padding-left: 200px;
+                                padding-right: 200px; 
+                                text-align: center;
+                                display: block;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                            }
+                            .input-row {
+                                margin: 0 0 40px;
+                                padding: 0 15px;
+                                position: relative;
+                            }
+
+                            .input-row {
+                                margin: 0 0 40px;
+                                padding: 0 15px;
+                                position: relative;
+                            }
+                            .x-row-inline >*  {
+                                width: 40%;
+                                margin-left: auto;
+                                margin-right: auto;
+                                position: relative;
+                                top: 40px;
+                            }
+                            .input-row {
+                                margin: 0 0 40px;
+                                padding: 0 15px;
+                                position: relative;
+                            }
+
+                        </xmp>
+                        <p><b>Свойство padding</b> устанавливает внутренние отступы/поля со всех
+                            сторон элемента. Область отступов это пространство между содержанием 
+                            элемента и его границей. Отрицательные значения не допускаются.
+                        <p><b>Свойство padding </b>краткая форма записи свойств, чтобы не 
+                            писать отдельное правило для каждой стороны 
+                            (padding-top, padding-right, padding-bottom, padding-left).
+                        <p><b>Свойство margin CSS</b> определяет внешний отступ на всех четырёх сторонах 
+                            элемента. 
+                        <p>Это сокращение, которое устанавливает все отдельные поля 
+                            одновременно: <b>(margin-top, margin-right, margin-bottom и margin-left)</b>
+                     </div>
+                     <div id="floatingLab2">
+                         <h2>Плаваючі елементи</h2>
+                         <xmp>
+                            <div style="float: left;" >
+                                <a class="text-link2" href="index.html">Go back</a>
+                            </div>
+                         </xmp>
+                         <img src="float.png" alt="photo" height="400" >
+                        <p><b>Плавающие элементы</b> это такие элементы, которые обтекаются по 
+                        <br>контуру другими объектами веб-страницы, например, текстом. 
+                        <p>Следует понимать, что никто и нигде не плавает, поэтому правильнее говорить «обтекаемые элементы»</p>
+                        <p><b>Свойство float CSS</b> указывает, что элемент должен быть взят 
+                        <br>из нормального потока и помещён вдоль левой или правой стороны его контейнера, где текст и встроенные элементы будут обтекать его.
+                     </div>
+                     <div id="selectorAllLab2">
+                         <h2>Селектори</h2>
+                         <h2>Селектори тегу і классу</h2>
+                         <p>Селекторы тега: table; button, (input, select, textarea)
+                         <br>В качестве селектора может выступать любой <b>тег HTML</b>, для которого определяются
+                          правила форматирования, такие как: цвет, фон, размер и т. д.;</p>
+
+                         <p>Селекторы класу: input-row, list-p;
+                         <br>В HTML документе, селекторы по CSS классу находят элементы с <b>нужным классом</b>. 
+                         <br>Атрибут класса определяется как разделённый пробелами список элементов, 
+                         и один из этих пунктов должен точно соответствовать имени класса, 
+                         приведённому в селекторе.</p>
+                         <xmp>
+                            table {
+                                table-layout: fixed;
+                                width: 80%;
+                                border-collapse: collapse;
+                                border: 3px solid #e7a145;
+                                margin: auto;
+                            }
+                            button, input, select, textarea {
+                                border-radius: 0;
+                                outline: none;
+                                border: none;
+                            }
+                            .input-row {
+                                margin: 0 0 40px;
+                                padding: 0 15px;
+                                position: relative;
+                            }
+                            
+                            .list-p {
+                                font-size:20px;
+                                text-align: left;
+                                color: #ffffff;
+                            }
+                         </xmp>
+                         <h2>Інші селектори</h2>
+                         <p>Інші селектори: input[type=submit].sendData - селектор атрибута.
+                             <br>Селекторы атрибутов отбирают элементы <b>по наличию атрибута или его значению</b>.
+                         </p>
+                         <xmp>
+                            input[type=submit].sendData:hover {
+                                background-color: #CE4718;
+                                color: white;
+                            }
+                            input[type=submit].sendData {
+                                display: inline-block;
+                                max-width: 260px;
+                                min-width: 180px;
+                                font-weight: 500;
+                                font-size: 16px;
+                                color: #CE4718;
+                                text-align: center;
+                                text-transform: uppercase;
+                                background-color: transparent;
+                                border: 1px solid #CE4718;
+                                border-radius: 2px;
+                                padding: 10px 20px;
+                                position: relative;
+                                overflow: hidden;
+                            }
+                        </xmp>
+                        <h2>Групування селекторів</h2>
+                        <p>Дочерние селекторы: ul > li
+                           <br>Дочерним называется элемент, который непосредственно располагается <b>внутри родительского элемента</b>. 
+                        </p>
+                        <xmp>
+                           ul > li{
+                               font-size:18px;
+                               text-align: left;
+                               color: #ffffff;
+                           }
+                        </xmp>
+                     </div>
+                     <div id="selectorsTCLab2">
+                         <h2>Селектори тегу і классу</h2>
+                         <p>Селекторы тега: table; button, (input, select, textarea)
+                         <br>В качестве селектора может выступать любой <b>тег HTML</b>, для которого определяются
+                          правила форматирования, такие как: цвет, фон, размер и т. д.;</p>
+
+                         <p>Селекторы класу: input-row, list-p;
+                         <br>В HTML документе, селекторы по CSS классу находят элементы с <b>нужным классом</b>. 
+                         <br>Атрибут класса определяется как разделённый пробелами список элементов, 
+                         и один из этих пунктов должен точно соответствовать имени класса, 
+                         приведённому в селекторе.</p>
+                         <xmp>
+                            table {
+                                table-layout: fixed;
+                                width: 80%;
+                                border-collapse: collapse;
+                                border: 3px solid #e7a145;
+                                margin: auto;
+                            }
+                            button, input, select, textarea {
+                                border-radius: 0;
+                                outline: none;
+                                border: none;
+                            }
+                            .input-row {
+                                margin: 0 0 40px;
+                                padding: 0 15px;
+                                position: relative;
+                            }
+                            
+                            .list-p {
+                                font-size:20px;
+                                text-align: left;
+                                color: #ffffff;
+                            }
+                         </xmp>
+                     </div>
+                     <div id="selectorsLab2">
+                         <h2>Інші селектори</h2>
+                         <p>Інші селектори: input[type=submit].sendData - селектор атрибута.
+                             <br>Селекторы атрибутов отбирают элементы <b>по наличию атрибута или его значению</b>.
+                         </p>
+                         <xmp>
+                            input[type=submit].sendData:hover {
+                                background-color: #CE4718;
+                                color: white;
+                            }
+                            input[type=submit].sendData {
+                                display: inline-block;
+                                max-width: 260px;
+                                min-width: 180px;
+                                font-weight: 500;
+                                font-size: 16px;
+                                color: #CE4718;
+                                text-align: center;
+                                text-transform: uppercase;
+                                background-color: transparent;
+                                border: 1px solid #CE4718;
+                                border-radius: 2px;
+                                padding: 10px 20px;
+                                position: relative;
+                                overflow: hidden;
+                            }
+                        </xmp>
+                     </div>
+                     <div id="selectorGroupLab2">
+                         <h2>Групування селекторів</h2>
+                         <p>Дочерние селекторы: ul > li
+                            <br>Дочерним называется элемент, который непосредственно располагается <b>внутри родительского элемента</b>. 
+                         </p>
+                         <xmp>
+                            ul > li{
+                                font-size:18px;
+                                text-align: left;
+                                color: #ffffff;
+                            }
+                         </xmp>
+                     </div>
+                     <div id="outLab2">
+                         <h2>Вісновки</h2>
+                         <p>У цій лабораторній роботі, ми навчилися працювати зі списками, 
+                             вивчили відмінність між тегами маркірованих або нумерованих 
+                             списків.  Розібралися з індіфікатор і як їх використовувати. 
+                              Навчилися працювати з плаваючими селекторами і зрозуміли, де 
+                              зручно їх використовувати.  Вивчили властивості css для відступів. 
+                            Зрозуміли різницю між padding (внутрішні відступи) і 
+                            margin (зовнішні відступи).  Розібралися з видами селекторів і як 
+                            їх використовувати.</p>
+                     </div>
+                </div>
+    
+            </div>
+        </div>
+
+    </body>
+</html>

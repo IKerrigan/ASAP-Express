@@ -1,0 +1,108 @@
+XMP{
+    position: relative;
+    right: 200px;
+    color: rgb(102, 102, 102);
+}
+#aboutGroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 -10px;
+    padding: 10px;
+}
+
+.info{
+    margin: 0 10px;
+}
+
+#laboratoryWorks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 -10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.labNum{
+    text-decoration: none;
+    color:black;
+    border: 4px double black;
+    padding: 10px 10px;
+    margin: 0 10px;
+}
+
+
+.work{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin-left: 40px;
+    margin: -5px 0;
+    padding: 30px 50px;
+}
+
+.lab{
+    text-decoration: none;
+    color:black;
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 10px 10px;
+    margin: 5px 0;
+    width: 200px;
+}
+
+#tableCode, #formCode, #imgCode, #listCode{
+    margin-left: 50px;
+}
+
+#selectorsTC, #selectors, #selectorGroup {
+    margin-left: 50px;
+}
+
+.outputLab{
+    position: relative;
+    color:black;
+    border: 1px solid;
+    width: 900px;
+    height: 500px;
+    left: 350px;
+    bottom: 430px;
+    z-index: 10;
+    overflow: scroll; 
+    padding: 15px; /* Поля вокруг текста */
+    border: solid 1px black;
+}
+
+.outputLab2{
+    position: relative;
+    color:black;
+    border: 1px solid;
+    width: 900px;
+    height: 500px;
+    left: 350px;
+    bottom: 530px;
+    z-index: 10;
+    overflow: scroll; 
+    padding: 15px; /* Поля вокруг текста */
+    border: solid 1px black;
+}
+
+#ourWork {
+    display: none;
+}
+
+#ourWork2 {
+    display: none;
+}
+
+.sticky {
+    position: fixed;
+    z-index: 101;
+  }
+  .stop {
+    position: relative;
+    z-index: 101;
+  }
+
