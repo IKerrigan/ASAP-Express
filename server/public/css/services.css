@@ -1,0 +1,182 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    margin-top: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://asapexpressinc.com/wp-content/uploads/2018/11/Truckonfreewayblue.jpg);
+    width: 100%;
+    height: 500px;
+}
+
+.page-title-express {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 70px;
+    line-height: 40px;
+    color: whitesmoke;
+    margin-left: 60px;
+    margin-top: 250px;
+}
+
+.page-title-services {
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 40px;
+    color: whitesmoke;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+.company-logo{
+    display: flex;
+    justify-content: flex-end;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 720px;
+}
+
+.accordeon-section {
+    width: 100%;
+    height: 1000px;
+}
+
+#accordeon {
+	width: 750px;
+	border: 5px solid #fff;
+	box-shadow: 0 0 10px grey;
+	margin-top: 4em;
+    margin-left: 60px;
+}
+ 
+.acc-head {
+	padding: 16px 20px;
+	background: rgb(245,245,245);
+    color: #15499a;
+	cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+ 
+.acc-body {
+	padding: 20px;
+	border-bottom: 1px solid #c0c0c0;
+	margin-bottom: 5px;
+	display: none;
+    font-size: 18px;
+    color: rgb(97,97,97);
+}
+
+ol{
+    list-style: none;
+}
+ol > li{
+    padding-left: 30px;
+    position: relative;
+    margin: 10px;
+}
+ol > li:before{
+    content: '✔';
+    position: absolute; top: 0; left: 0;
+    color: #15499a;
+}
+
+#block-for-slider {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;    
+}
+
+#viewport {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    text-align: center;
+}
+
+#slidewrapper {
+    position: relative;
+    width: calc(100% * 4);
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    -webkit-transition-timing-function: cubic-bezier(.67,.01,.23,1);
+    -o-transition-timing-function: cubic-bezier(.67,.01,.23,1);
+    transition-timing-function: cubic-bezier(.67,.01,.23,1);
+}
+
+#slidewrapper, #slidewrapper ul, #slidewrapper li {
+    margin: 0;
+    padding: 0;
+}
+
+.slide {
+    width: calc(100%/4);
+    height: 550px;
+    list-style: none;
+    display: inline;
+    float: left;
+}
+
+.slide-img {
+    width: 100%;
+}
+
+#prev-btn, #next-btn {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: calc(50% - 25px);
+}
+
+#prev-btn:hover, #next-btn:hover {
+    cursor: pointer;
+}
+
+#prev-btn {
+    left: 20px;
+}
+
+#next-btn {
+    right: 20px;
+}
+
+#nav-btns {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.slide-nav-btn {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 3px;
+}
+
+.slide-nav-btn:hover {
+    cursor: pointer;
+}

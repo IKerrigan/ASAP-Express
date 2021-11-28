@@ -82,7 +82,7 @@
                
         <section class="formContact" >
           <div class="formContact">
-            <form class="x-row-inline contactUs" novalidate="novalidate">
+            <form class="x-row-inline contactUs" novalidate="novalidate" action="/test" method="post">
               <div class="formText" ><h2>LET'S GET STARTED</h2></div>
               <div class="input-row">
                   <span class="data">
@@ -122,10 +122,11 @@
               </div>
               <div class="input-row">
                   <div class="input-row x-row-inline">
-                      <input type="submit" value="Send Request" class="sendData" />
+                      <button type="submit" class="sendData" id="button-send-request">Send Request</button>
                   </div>
               </div>
           </form>
         </div>
     </body>
+    <script src="./scripts/index.js"></script>
 </html>

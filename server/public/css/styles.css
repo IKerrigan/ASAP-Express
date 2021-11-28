@@ -265,3 +265,19 @@ input[type=submit].sendData {
     line-height: 25px;
 }
 
+#button-send-request{
+    display: inline-block;
+    max-width: 260px;
+    min-width: 180px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #CE4718;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 1px solid #CE4718;
+    border-radius: 2px;
+    padding: 10px 20px;
+    position: relative;
+    overflow: hidden;
+}

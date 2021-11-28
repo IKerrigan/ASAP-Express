@@ -1,0 +1,190 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    margin-top: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://asapexpressinc.com/wp-content/uploads/2018/12/connectedcity.jpg?id=18866);
+    width: 100%;
+    height: 400px;
+}
+
+.header-meaning {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 70px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: whitesmoke;
+    margin-left: 60px;
+    margin-top: 150px;
+}
+
+.vertical-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.vertmenu {
+    margin: 2em 10px 0 300px;
+}
+
+.vertmenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.vertmenu ul li {
+    position: relative;
+    margin: 0;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.vertmenu ul li li {
+    padding-left: 20px;
+}
+
+.vertmenu .subCat,
+.chka {
+    top: 0;
+    right: -30px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.vertmenu .subCat.plus,
+.chka:before,
+.vertmenu .subCat.minus,
+.subCat:checked+.chka:before {
+    content: '+';
+    font-size: 25px;
+    color: whitesmoke;
+    font-weight: bold;
+    font-family: Courier;
+}
+
+.vertmenu .subCat.minus,
+.subCat:checked+.chka:before {
+    content: '-';
+}
+
+.vertmenu a {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.vertmenu ul li li a {
+    color: whitesmoke;
+    font-size: 19px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.vertmenu a.active {
+    color: white;
+}
+
+.vertmenu a:hover {
+    text-decoration: none;
+    color: #c41515 !important;
+}
+
+.vertmenu>ul>li ul {
+    display: none;
+}
+
+.vertmenu>ul>li a.active+span+ul {
+    display: block !important;
+}
+
+.vertmenu>ul>li .subCat:checked~ul {
+    display: block !important;
+}
+
+.vertmenu input[type=checkbox].subCat {
+    display: none;
+}
+
+.vertmenu ul li li a:before {
+    content: '\203A';
+    font-size: 18px;
+    padding-right: 6px;
+    color: #c41515;
+    font-weight: bold;
+}
+
+.vertmenu>ul li li a:hover:before {
+    color: whitesmoke;
+}
+
+.page-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 4em;
+}
+
+.get-quote {
+    font-size: 48px;
+    font-weight: bold;
+    color: #212121;
+}
+
+.fast {
+    font-size: 48px;
+    color: #15499a;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.image-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 4em;
+}
+
+.image {
+    width: 63px;
+    height: 55px;
+}
+
+.image-text {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #212121;
+    margin-top: 0,5em;
+}
+
+.extra-service {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+.courier-text {
+    font-size: 20px;
+    color: #616161;
+}
+
+.courier-link {
+    font-size: 20px;
+    color: #15499a;  
+}

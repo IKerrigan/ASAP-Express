@@ -21,9 +21,9 @@ p {
     font-size: 42px; 
     display: flex;
     align-items:center;
-    justify-content: center;
-    padding-right: 120px;
+    justify-content: space-around;
     padding-top: 5px;
+    margin-left: 400px;
 }
 
 #fit-picture {
@@ -37,71 +37,86 @@ p {
 #section-2 {
     width: 30%;
     height: 600px;
-    background-color: whitesmoke;
     float: left;
 }
 
 #section2-title {
-    color: #212121;
     font-size: 30px;
     text-align: center;
     text-transform: uppercase;
-    padding-top: 20px;
+    padding-top: 50px;
 }
 
 #section2-list {
-    color: #616161;
     font-size: 22px;
-    padding-top: 10px;
+    padding-top: 0;
+}
+
+#content {
+    background-color:whitesmoke;
+    color: #212121;
 }
 
 #section-4 {
     width: 100%;
-    height: 600px;
-    background-color:whitesmoke;
+    height: 520px;
 }
 
 #section4-title {
-    color: #212121;
     font-size: 28px;
     text-align: left;
     text-transform: uppercase;
-    padding-top: 138px;  
+    padding-top: 53px;  
     font-weight: 600; 
 }
 
 #section4-text1 {
-    color: #616161;
     font-size: 23px;
     padding-top: 10px;    
 }
 
 #section4-text2 {
-    color: #616161;
     font-size: 18px;
     padding-top: 10px;   
 }
 
 #section-5 {
+    display: inline-block;
     width: 70%;
     height: 60px;
-    background-color:whitesmoke;
-    float: right;
+    margin-top: 30px;
 }
 
-#section5-title1 {
-    color: #15499a;
-    font-size: 22px;
-    text-align: left;
+.menu {
+    background-color: #15499a; 
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
     font-weight: bold;
-    padding-top: 60px;
-    padding-right: 30px;
+    margin: 10px 6px;
+    padding: 8px 20px;
+    cursor: pointer;
+    margin-left: 0px;
+    margin-right: 15px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.menu:hover {
+    background-color: #616161;
+    color: white;
+}
+
+.select-color {
+    color: white;
 }
 
 #footer {
     width: 100%;
     height: 63px;
     background-color: #15499a;
+    display: inline-block;
 }
 
 #footer-text {
@@ -124,7 +139,7 @@ p {
     background-size: cover;
     background-image: url("https://asapexpressinc.com/wp-content/uploads/2018/12/connectedcity.jpg?id=18866");
     width: 100%;
-    height: 700px;
+    height: 730px;
 }
 
 #company-title{
@@ -145,6 +160,7 @@ p {
     width: 100%;
     height: 300px;
     margin-top: 50px;
+    display: inline-block;
 }
 
 #text {
@@ -154,4 +170,82 @@ p {
     text-align: center;
     padding-right: 60px;
     padding-left: 60px;
+}
+
+.change-theam {
+    width: 40px;
+    height: 40px;
+    background-color: whitesmoke; 
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px 8px 8px 8px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    margin-left: 100px;
+}
+
+.button-image {
+    display: flex;
+    justify-content: center;
+    margin-left: 1px;
+    width: 25px;
+    height: 25px;
+}
+
+.footer-social-links{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 63px;
+    background-color: #15499a;
+}
+
+.icons {
+    width: 35px;
+    height: 35px;
+    margin-top: 13px;
+    background-color: whitesmoke; 
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50px 50px 50px 50px;
+}
+
+.facebook-logo {
+    width: 35px;
+    height: 35px;
+    margin-left: -6px;
+    margin-top: -1px;
+}
+
+.instagram-logo {
+    width: 29px;
+    height: 29px;
+    margin-left: -3px;
+    margin-top: 2px;
+}
+
+.twitter-logo {
+    width: 35px;
+    height: 35px;
+    margin-left: -6px;
+    margin-top: -1px;
+}
+
+.pinterest-logo {
+    width: 29px;
+    height: 29px;
+    margin-left: -3px;
+    margin-top: 2px;
+}
+
+.gps-logo {
+    width: 25px;
+    height: 25px; 
+}
+
+.gps {
+    margin-top: 13px;
+    color: white;
 }
