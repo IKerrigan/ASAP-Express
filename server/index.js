@@ -2,10 +2,10 @@ const bodyParser = require('body-parser')
 const express = require('express')
 const path = require('path')
 
+require('./passport');
 const routers = require('./routers');
 
 const PORT = 3000
-
 const app = express()
 
 app.use(express.static(path.join(__dirname, 'public')))

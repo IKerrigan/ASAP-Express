@@ -4,7 +4,7 @@ $(document).ready(function () {
 
 function f_acc() {
   $('#accordeon .acc-body').not($(this).next()).slideUp(1000);
-  $(this).next().slideToggle(2000);
+  $(this).next().slideToggle(5000);
 }
 
 var slideNow = 1;

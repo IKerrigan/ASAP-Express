@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/mailbox.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body bg-primary text-white mailbox-widget pb-0">
+                        <h2 class="text-white pb-3"><span id="email"></span></h2>
+                    </div>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade active show" id="inbox" aria-labelledby="inbox-tab" role="tabpanel">
+                            <div>
+                                <div class="row p-4 no-gutters align-items-center">
+                                    <div class="col-sm-12 col-md-6">
+                                        <a id="new-message">
+                                            <button class="btn btn-circle btn-success text-white"
+                                                href="javascript:void(0)">
+                                                <i class="fa fa-plus"></i>
+                                            </button>
+                                            <span class="ml-2 font-normal text-dark">New Message</a></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Mail list-->
+                                <div class="table-responsive">
+                                    <table id="content"
+                                        class="table email-table no-wrap table-hover v-middle mb-0 font-14">
+                                        <tbody id="tbody">
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="./scripts/mailbox.js"></script>
+
+</html>

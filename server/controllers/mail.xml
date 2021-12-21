@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<emails>
+  <email id="2" from="test@test.com" to="irina1stefanovych@gmail.com">
+    <subject>Test</subject>
+    <content>test content</content>
+  </email>
+  <email id="3" from="test@test.com" to="irina1stefanovych@gmail.com">
+    <subject>Test</subject>
+    <content>test content</content>
+  </email>
+  <email id="5" from="test@test.com" to="noinfo">
+    <subject>Test</subject>
+    <content>test content</content>
+  </email>
+  <email id="e8695e18-3537-470e-af17-495dc23c4836" from="irina1stefanovych@gmail.com" to="1@test.com">
+    <subject>123</subject>
+    <content>213</content>
+  </email>
+  <email id="dd0a6a61-e5be-4608-81f0-dd18ac37392b" from="irina1stefanovych@gmail.com" to="norman@gmail.com">
+    <subject>Important to Norman</subject>
+    <content>Urgent!!!</content>
+  </email>
+  <email id="2fb7245b-f2e7-49bc-a41b-1b64ddad3842" from="irina1stefanovych@gmail.com" to="norman@gmail.com">
+    <subject>URGENT FREIGHT</subject>
+    <content>Any options for me? </content>
+  </email>
+</emails>

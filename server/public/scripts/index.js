@@ -21,10 +21,8 @@ buttonElement.addEventListener('click', function (event) {
 
 buttonElement.addEventListener('mouseover', function (event) {
     if (darkTheme) {
-        buttonElement.style.backgroundColor = "#616161";
         buttonElement.style.backgroundColor = "whitesmoke";
     } else {
-        buttonElement.style.backgroundColor = "whitesmoke";
         buttonElement.style.backgroundColor = "#616161";
     }
 })
